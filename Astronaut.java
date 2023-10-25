@@ -11,6 +11,23 @@ public class Astronaut {
         System.out.println(name + " ready for launch!");
     }
 
+    public void doActions() {
+        System.out.println(name + ": Nothing to do.");
+        this.snacks++;
+        System.out.println(name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+    }
+
+    public void doActions(planet.Mars planet) {
+        System.out.println(name+ ": Started a mission!");
+        this.destination = planet.getLandingSite();
+    }
+
+    public void doActions(chocolate.Mars chocolate) {
+        System.out.println(name + ": Thanks for this Mars number " + chocolate.getId());
+        this.snacks++;
+        System.out.println(name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+    }
+
     public int getId() {
         return id;
     }
