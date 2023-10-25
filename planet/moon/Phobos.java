@@ -5,22 +5,18 @@ import planet.Mars;
 public class Phobos {
 
     private Mars mars;
-    private String destination;
+    private String landingSite;
 
-    public Phobos(Mars mars) {
-        this.mars = mars;
-        System.out.println("Phobos placed in orbit.");
-    }
-
-    public Phobos(Mars mars, String destination) {
-        this.mars = mars;
-        this.destination = destination;
-        System.out.println("Phobos placed in orbit.");
-    }
-
-    public Phobos(String destination) {
-        this.destination = destination;
-        System.out.println("No planet given.");
+    public Phobos(Mars mars, String landingSite) {
+        if (mars != null) {
+            this.mars = mars;
+            this.landingSite = landingSite;
+            System.out.println("Phobos placed in orbit.");
+        } else {
+            this.mars = null;
+            this.landingSite = null;
+            System.out.println("No planet given.");
+        }
     }
 
     public Mars getMars() {
@@ -28,7 +24,7 @@ public class Phobos {
     }
 
     public String getLandingSite() {
-        return this.destination;
+        return this.landingSite;
     }
 
 }
