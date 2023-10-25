@@ -1,3 +1,5 @@
+import planet.moon.Phobos;
+
 public class Astronaut {
 
     private static int count = 0;
@@ -26,6 +28,11 @@ public class Astronaut {
         System.out.println(name + ": Thanks for this Mars number " + chocolate.getId());
         this.snacks++;
         System.out.println(name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
+    }
+
+    public void doActions(Phobos phobos){
+        System.out.println(name + ": Started a mission!");
+        this.destination = phobos.getMars().getLandingSite();
     }
 
     public int getId() {

@@ -1,4 +1,5 @@
 import planet.Mars;
+import planet.moon.Phobos;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,6 +64,15 @@ public class Team {
 
         this.astronauts
                 .forEach(Astronaut::doActions);
+    }
+
+    public void doActions(Phobos phobos){
+        if(this.astronauts.isEmpty()){
+            return;
+        }
+
+        this.astronauts
+                .forEach(astronaut -> astronaut.doActions(phobos));
     }
 
 }
