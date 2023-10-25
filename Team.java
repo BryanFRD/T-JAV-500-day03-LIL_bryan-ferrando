@@ -1,3 +1,5 @@
+import planet.Mars;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +36,33 @@ public class Team {
                         .append(astronaut.getDestination() == null ? " on standby" : " on mission")
                         .append(", "));
         System.out.println(sb.substring(0, sb.length() - 2) + ".");
+    }
+
+    public void doActions(Mars mars){
+        if(this.astronauts.isEmpty()){
+            return;
+        }
+
+        this.astronauts
+                .forEach(astronaut -> astronaut.doActions(mars));
+    }
+
+    public void doActions(chocolate.Mars mars){
+        if(this.astronauts.isEmpty()){
+            return;
+        }
+
+        this.astronauts
+                .forEach(astronaut -> astronaut.doActions(mars));
+    }
+
+    public void doActions(){
+        if(this.astronauts.isEmpty()){
+            return;
+        }
+
+        this.astronauts
+                .forEach(Astronaut::doActions);
     }
 
 }
