@@ -17,7 +17,6 @@ public class Astronaut {
         System.out.println(name + ": Nothing to do.");
         if(this.destination == null){
             System.out.println(name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
-            this.snacks++;
         }
     }
 
