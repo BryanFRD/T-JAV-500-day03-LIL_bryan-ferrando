@@ -23,10 +23,6 @@ public class Phobos {
         System.out.println("No planet given.");
     }
 
-    public Phobos(){
-        System.out.println("No planet given.");
-    }
-
     public Mars getMars() {
         return mars;
     }
