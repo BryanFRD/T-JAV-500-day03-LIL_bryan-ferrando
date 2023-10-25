@@ -20,7 +20,7 @@ public class Phobos {
 
     public Phobos(String destination) {
         this.destination = destination;
-        System.out.println("Phobos placed in orbit.");
+        System.out.println("No planet given.");
     }
 
     public Phobos(){
