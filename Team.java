@@ -40,37 +40,21 @@ public class Team {
     }
 
     public void doActions(Mars mars){
-        if(this.astronauts.isEmpty()){
-            return;
-        }
-
         this.astronauts
                 .forEach(astronaut -> astronaut.doActions(mars));
     }
 
     public void doActions(chocolate.Mars mars){
-        if(this.astronauts.isEmpty()){
-            return;
-        }
-
         this.astronauts
                 .forEach(astronaut -> astronaut.doActions(mars));
     }
 
     public void doActions(){
-        if(this.astronauts.isEmpty()){
-            return;
-        }
-
         this.astronauts
                 .forEach(Astronaut::doActions);
     }
 
     public void doActions(Phobos phobos){
-        if(this.astronauts.isEmpty()){
-            return;
-        }
-
         this.astronauts
                 .forEach(astronaut -> astronaut.doActions(phobos));
     }
