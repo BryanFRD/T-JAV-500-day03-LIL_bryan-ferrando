@@ -15,8 +15,6 @@ public class Astronaut {
 
     public void doActions() {
         System.out.println(name + ": Nothing to do.");
-        System.out.println(name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
-        this.snacks++;
     }
 
     public void doActions(planet.Mars planet) {
