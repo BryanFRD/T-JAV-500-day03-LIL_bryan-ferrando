@@ -26,11 +26,11 @@ public class Astronaut {
     }
 
     public void doActions(chocolate.Mars chocolate) {
+        this.snacks++;
         System.out.println(name + ": Thanks for this Mars number " + chocolate.getId());
         if(this.destination == null){
             System.out.println(name + ": I may have done nothing, but I have " + this.snacks + " Mars to eat at least!");
         }
-        this.snacks++;
     }
 
     public void doActions(Phobos phobos){
