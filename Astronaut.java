@@ -32,7 +32,7 @@ public class Astronaut {
 
     public void doActions(Phobos phobos){
         System.out.println(name + ": Started a mission!");
-        this.destination = phobos.getMars().getLandingSite();
+        this.destination = phobos.getLandingSite();
     }
 
     public int getId() {
