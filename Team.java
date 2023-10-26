@@ -55,8 +55,7 @@ public class Team {
     }
 
     public void doActions(){
-        this.astronauts
-                .forEach(Astronaut::doActions);
+        System.out.println(this.name + ": Nothing to do.");
     }
 
     public void doActions(Phobos phobos){
