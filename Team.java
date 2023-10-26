@@ -1,16 +1,21 @@
 import planet.Mars;
 import planet.moon.Phobos;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Team {
 
-    private String teamName;
-    private List<Astronaut> astronauts = new ArrayList<>();
+    private String name;
+    private ArrayList<Astronaut> astronauts = new ArrayList<>();
 
-    public Team(String teamName){
-        this.teamName = teamName;
+    public Team(String name){
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void add(Astronaut astronaut){
@@ -30,7 +35,7 @@ public class Team {
             return;
         }
 
-        StringBuilder sb = new StringBuilder(this.teamName + ": ");
+        StringBuilder sb = new StringBuilder(this.name + ": ");
         astronauts
                 .forEach(astronaut -> sb
                         .append(astronaut.getName())
