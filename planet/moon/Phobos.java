@@ -19,6 +19,12 @@ public class Phobos {
         }
     }
 
+    public Phobos(String landingSite) {
+        this.mars = null;
+        this.landingSite = landingSite;
+        System.out.println("No planet given.");
+    }
+
     public Mars getMars() {
         return mars;
     }
